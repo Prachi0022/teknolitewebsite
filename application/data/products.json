@@ -1,0 +1,587 @@
+{
+    "cob-downlight": {
+        "id": "cob-downlight",
+        "name": "LED COB Downlight",
+        "slug": "led-cob-downlight",
+        "sku": "TL-GAMMA-01",
+        "category": "Cobspot Light",
+        "subcategory": "Recessed Trimless",
+        "price": 1450,
+        "regular_price": 1800,
+        "price_on_request": true,
+        "stock": 486,
+        "display_order": 1,
+        "status": "active",
+        "is_featured": true,
+        "is_bestseller": false,
+        "rating": 4.8,
+        "reviews_count": 55,
+        "featured_image": "assets/images/products/gamma.png",
+        "hover_image": "assets/images/products/gamma_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/gamma.png",
+            "assets/images/products/gamma_hover.jpeg",
+            "assets/images/shop/banner1.jpg",
+            "assets/images/shop/banner1.1.jpg"
+        ],
+        "short_description": "Architectural recessed LED COB downlight with deep-set anti-glare optics and vibrant color fidelity.",
+        "full_description": "TeknoLite LED COB Downlight provides focused, efficient illumination with a clean recessed ceiling finish. Featuring an integrated die-cast aluminum heat sink, precision faceted secondary reflector, and high CRI > 90 chip, it ensures seamless integration into luxury residences, hospitality suites, and boutique showrooms.",
+        "specifications": {
+            "wattage": [
+                "7W",
+                "12W",
+                "18W",
+                "24W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White",
+                "6000K Cool White"
+            ],
+            "beam_angles": [
+                "15°",
+                "24°",
+                "36°",
+                "60°"
+            ],
+            "finishes": [
+                "Matt White",
+                "Matt Black",
+                "Brushed Gold"
+            ],
+            "input_voltage": "AC 220-240V, 50/60Hz",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20 / IP44 Optional",
+            "mounting": "Ceiling Recessed",
+            "dimensions": "Ø85mm x 70mm (Cutout Ø75mm)",
+            "luminous_flux": "950 - 2400 Lumens • &lt; 16 Anti-Glare",
+            "ugr": "< 16 Anti-Glare"
+        },
+        "features": [
+            "Deep recessed anti-glare optical chamber (UGR &lt; 16)",
+            "High lumen efficacy up to 105 lm/W",
+            "Heavy-duty die-cast aluminum thermal heat dissipation",
+            "Flicker-free isolated constant current LED driver",
+            "50,000+ hours L70 rated operating lifespan"
+        ],
+        "applications": [
+            "Luxury Residential Villas",
+            "High-End Retail Boutiques",
+            "Hospitality & Hotel Guestrooms",
+            "Art Galleries & Museums",
+            "Corporate Executive Boardrooms"
+        ],
+        "seo": {
+            "meta_title": "LED COB Downlight | Architectural Lighting | TeknoLite",
+            "meta_description": "Explore TeknoLite LED COB Downlight with UGR < 16> 90, and multi-wattage options. Request a quote or download spec sheets.",
+            "meta_keywords": "LED COB Downlight, Recessed Downlight, Anti-glare downlight, Architectural Lighting, TeknoLite",
+            "slug": "led-cob-downlight"
+        }
+    },
+    "track-light": {
+        "id": "track-light",
+        "name": "LED Track Light",
+        "slug": "led-track-light",
+        "sku": "TL-GLIGHT-02",
+        "category": "Spot Lights",
+        "subcategory": "Track Spotlight",
+        "price": 2250,
+        "regular_price": 2750,
+        "price_on_request": false,
+        "stock": 784,
+        "display_order": 2,
+        "status": "active",
+        "is_featured": true,
+        "is_bestseller": false,
+        "rating": 4.9,
+        "reviews_count": 143,
+        "featured_image": "assets/images/products/glight.png",
+        "hover_image": "assets/images/products/glight_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/glight.png",
+            "assets/images/products/glight_hover.jpeg"
+        ],
+        "short_description": "High-performance commercial track spotlight with 350° horizontal rotation and 90° vertical tilt.",
+        "full_description": "Engineered for flexibility and punch, the TeknoLite Commercial Track Light features an adaptable universal 3-circuit track adapter, honeycomb louver option, and interchangeable optical lenses. Perfectly illuminates accent displays, apparel, and gallery artwork.",
+        "specifications": {
+            "wattage": [
+                "15W",
+                "24W",
+                "30W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White",
+                "5000K Neutral White"
+            ],
+            "beam_angles": [
+                "15°",
+                "24°",
+                "38°"
+            ],
+            "finishes": [
+                "Matt Black",
+                "Matt White"
+            ],
+            "input_voltage": "AC 220-240V, 50/60Hz",
+            "cri": "> 92 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Universal 3-Circuit / 1-Phase Track",
+            "dimensions": "Ø70mm x 140mm",
+            "luminous_flux": "1500 - 3200 Lumens",
+            "ugr": "< 19"
+        },
+        "features": [
+            "350° horizontal rotation and 90° vertical articulation",
+            "Compatible with global standard track rails",
+            "Passive cooling finned aluminum extrusion body",
+            "Interchangeable optical reflectors for precise beam control",
+            "Triac and DALI dimming options available"
+        ],
+        "applications": [
+            "Fashion Retail & Showrooms",
+            "Museums & Art Galleries",
+            "Automotive Displays",
+            "Commercial Lobbies",
+            "Jewelry Boutiques"
+        ],
+        "seo": {
+            "meta_title": "Commercial LED Track Light | Spotlights | TeknoLite",
+            "meta_description": "TeknoLite commercial grade LED Track Light with 350-degree rotation, high CRI 92, and multiple beam spreads for flexible display lighting.",
+            "meta_keywords": "LED Track Light, Commercial Spotlight, Track lighting, Retail display light, TeknoLite",
+            "slug": "led-track-light"
+        }
+    },
+    "garden-light": {
+        "id": "garden-light",
+        "name": "Garden & Landscape Light",
+        "slug": "garden-landscape-light",
+        "sku": "TL-GLS-03",
+        "category": "Garden Lights",
+        "subcategory": "Landscape Spike",
+        "price": 1850,
+        "regular_price": 2200,
+        "price_on_request": false,
+        "stock": 769,
+        "display_order": 3,
+        "status": "active",
+        "is_featured": false,
+        "is_bestseller": true,
+        "rating": 4.7,
+        "reviews_count": 174,
+        "featured_image": "assets/images/products/gls.png",
+        "hover_image": "assets/images/products/gls_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/gls.png",
+            "assets/images/products/gls_hover.jpeg"
+        ],
+        "short_description": "IP65 waterproof landscape spike and flood fixture for gardens, pathways, and facade accents.",
+        "full_description": "Built from marine-grade anodized aluminum with corrosion-resistant electrostatic powder coating, this outdoor landscape spotlight withstands harsh environmental conditions while delivering dramatic grazing and accent effects onto flora, trees, and architectural columns.",
+        "specifications": {
+            "wattage": [
+                "6W",
+                "10W",
+                "15W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White",
+                "Green Accent"
+            ],
+            "beam_angles": [
+                "24°",
+                "45°",
+                "60°"
+            ],
+            "finishes": [
+                "Anodized Dark Gray",
+                "Matt Black"
+            ],
+            "input_voltage": "AC 85-265V / 24V DC Safe Low Voltage",
+            "cri": "> 80 Ra",
+            "ip_rating": "IP65 Waterproof",
+            "mounting": "Ground Spike / Surface Base",
+            "dimensions": "Ø60mm x 120mm (Ground Spike: 160mm)",
+            "luminous_flux": "580 - 1450 Lumens",
+            "ugr": "N/A (Outdoor)"
+        },
+        "features": [
+            "IP65 waterproof rating with double silicone sealing rings",
+            "Tempered impact-resistant optical glass lens",
+            "Anti-glare cowl/hood to shield stray light",
+            "Heavy-duty ABS ground spike with tilt lock mechanism",
+            "Available in safe 24V DC extra-low-voltage variant"
+        ],
+        "applications": [
+            "Garden Pathways & Walkways",
+            "Tree & Shrub Up-Lighting",
+            "Exterior Facade Grazing",
+            "Hotel Landscape & Courtyards",
+            "Resort Water Features & Patios"
+        ],
+        "seo": {
+            "meta_title": "Outdoor Garden & Landscape Spike Light | IP65 | TeknoLite",
+            "meta_description": "TeknoLite IP65 waterproof outdoor garden spotlight with ground spike and surface mount base for landscaping, trees, and facade illumination.",
+            "meta_keywords": "Garden Light, Landscape Spotlight, Outdoor LED Light, IP65 Spike Light, TeknoLite",
+            "slug": "garden-landscape-light"
+        }
+    },
+    "surface-downlight": {
+        "id": "surface-downlight",
+        "name": "Surface Mount Downlight",
+        "slug": "surface-mount-downlight",
+        "sku": "TL-MV8BOX-04",
+        "category": "Down Lights",
+        "subcategory": "Surface Mounted",
+        "price": 1650,
+        "regular_price": 1950,
+        "price_on_request": false,
+        "stock": 571,
+        "display_order": 4,
+        "status": "active",
+        "is_featured": false,
+        "is_bestseller": false,
+        "rating": 4.6,
+        "reviews_count": 88,
+        "featured_image": "assets/images/products/mv8box.png",
+        "hover_image": "assets/images/products/mv8box_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/mv8box.png",
+            "assets/images/products/mv8box_hover.jpeg"
+        ],
+        "short_description": "Square architectural surface-mounted cylinder downlight for exposed slab ceilings.",
+        "full_description": "Designed specifically for architectural ceilings without false ceiling or drywall cutouts, the MV8 series mounts directly onto concrete slabs, exposed beams, or wood deck ceilings, providing clean, geometric aesthetic appeal with internal driver housing.",
+        "specifications": {
+            "wattage": [
+                "10W",
+                "15W",
+                "20W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White",
+                "6000K Cool White"
+            ],
+            "beam_angles": [
+                "24°",
+                "36°"
+            ],
+            "finishes": [
+                "Matt White",
+                "Matt Black"
+            ],
+            "input_voltage": "AC 220-240V, 50/60Hz",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Ceiling Surface Mounted",
+            "dimensions": "85mm x 85mm x 100mm",
+            "luminous_flux": "900 - 1900 Lumens",
+            "ugr": "< 18"
+        },
+        "features": [
+            "Surface mount canopy with twist-and-lock mounting ring",
+            "Clean seamless housing with concealed fasteners",
+            "Integrated flicker-free driver within fixture canopy",
+            "Deep anti-glare louver baffle",
+            "High CRI > 90 true color representation"
+        ],
+        "applications": [
+            "Exposed Concrete Slab Lofts",
+            "Modern Minimalist Apartments",
+            "Commercial Corridors & Lobbies",
+            "Restaurants & Cafe Ceilings",
+            "Retail Stores"
+        ],
+        "seo": {
+            "meta_title": "Square Surface Mount Downlight | Architectural | TeknoLite",
+            "meta_description": "Discover TeknoLite square surface-mounted downlights for concrete ceilings and spaces without recessed provisions. High CRI and clean design.",
+            "meta_keywords": "Surface Downlight, Square Cylinder Downlight, Ceiling Surface Light, Architectural Lighting, TeknoLite",
+            "slug": "surface-mount-downlight"
+        }
+    },
+    "spotlight-series": {
+        "id": "spotlight-series",
+        "name": "Spotlight Accent Series",
+        "slug": "spotlight-accent-series",
+        "sku": "TL-SPOT-05",
+        "category": "Spot Lights",
+        "subcategory": "Micro Spotlight",
+        "price": 950,
+        "regular_price": 1200,
+        "price_on_request": false,
+        "stock": 420,
+        "display_order": 5,
+        "status": "active",
+        "is_featured": false,
+        "is_bestseller": false,
+        "rating": 4.8,
+        "reviews_count": 92,
+        "featured_image": "assets/images/products/spotlight.png",
+        "hover_image": "assets/images/products/spotlight_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/spotlight.png",
+            "assets/images/products/spotlight_hover.jpeg"
+        ],
+        "short_description": "Precision miniature spotlight fixture for museum vitrines, jewelry displays, and niche lighting.",
+        "full_description": "The TeknoLite Micro Spotlight delivers focused, punchy accent beams in compact form factors. Ideal for fine jewelry displays, niche shelving, museum showcases, and bespoke residential millwork.",
+        "specifications": {
+            "wattage": [
+                "5W",
+                "8W",
+                "12W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White"
+            ],
+            "beam_angles": [
+                "15°",
+                "24°",
+                "36°"
+            ],
+            "finishes": [
+                "Matt Black",
+                "Brushed Gold",
+                "Matt White"
+            ],
+            "input_voltage": "AC 220-240V",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Mini Surface / Niche Base",
+            "dimensions": "Ø50mm x 85mm",
+            "luminous_flux": "450 - 1100 Lumens",
+            "ugr": "< 15"
+        },
+        "features": [
+            "Compact micro form factor for discreet architectural integration",
+            "Ultra-narrow 15° beam capability for pinpoint accenting",
+            "360° rotational knuckle hinge",
+            "Zero UV and low heat radiation for delicate artifacts"
+        ],
+        "applications": [
+            "Jewelry & Watch Vitrines",
+            "Museum Glass Showcases",
+            "Residential Bookcases & Niches",
+            "Wine Cellars & Tasting Rooms"
+        ],
+        "seo": {
+            "meta_title": "Miniature Accent Spotlight Series | TeknoLite",
+            "meta_description": "Precision miniature LED accent spotlights for showcase, niche, and jewelry lighting from TeknoLite.",
+            "meta_keywords": "Mini Spotlight, Accent Lighting, Showcase Light, Jewelry Vitrine Light, TeknoLite",
+            "slug": "spotlight-accent-series"
+        }
+    },
+    "round-recessed": {
+        "id": "round-recessed",
+        "name": "Round Linear Recessed Light",
+        "slug": "round-linear-recessed-light",
+        "sku": "TL-RLDRD-06",
+        "category": "Down Lights",
+        "subcategory": "Recessed Trimless",
+        "price": 2100,
+        "regular_price": 2500,
+        "price_on_request": false,
+        "stock": 310,
+        "display_order": 6,
+        "status": "active",
+        "is_featured": true,
+        "is_bestseller": false,
+        "rating": 4.7,
+        "reviews_count": 64,
+        "featured_image": "assets/images/products/rldrd.png",
+        "hover_image": "assets/images/products/rldrd_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/rldrd.png",
+            "assets/images/products/rldrd_hover.jpeg"
+        ],
+        "short_description": "Architectural recessed round downlight with integrated linear darklight reflector for zero glare.",
+        "full_description": "Featuring a precision darklight optical baffle system, the RLDRD round recessed luminaire completely obscures the light source at standard viewing angles, achieving true darklight illumination where light is felt without visual intrusion.",
+        "specifications": {
+            "wattage": [
+                "12W",
+                "18W",
+                "24W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White"
+            ],
+            "beam_angles": [
+                "30°",
+                "45°"
+            ],
+            "finishes": [
+                "Matt White",
+                "Matt Black"
+            ],
+            "input_voltage": "AC 220-240V",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Trimless / Trimmed Plaster-In",
+            "dimensions": "Ø95mm x 80mm",
+            "luminous_flux": "1100 - 2300 Lumens",
+            "ugr": "< 13 Darklight"
+        },
+        "features": [
+            "Ultra-low glare darklight optical baffle (UGR < 13)",
+            "Trimless mud-in plaster frame option for seamless drywall look",
+            "Class II isolated dimmable driver compatible with 0-10V/DALI",
+            "Optimal optical efficiency with vacuum metalized reflector"
+        ],
+        "applications": [
+            "Corporate Executive Suites",
+            "Luxury Penthouse Ceilings",
+            "Fine Dining Restaurants",
+            "Hotel Corridors & Suites"
+        ],
+        "seo": {
+            "meta_title": "Round Linear Recessed Downlight | Darklight | TeknoLite",
+            "meta_description": "TeknoLite round linear recessed downlight with zero-glare darklight technology and trimless installation capability.",
+            "meta_keywords": "Round Recessed Downlight, Darklight downlight, Trimless downlight, TeknoLite",
+            "slug": "round-linear-recessed-light"
+        }
+    },
+    "square-recessed": {
+        "id": "square-recessed",
+        "name": "Square Recessed Downlight",
+        "slug": "square-recessed-downlight",
+        "sku": "TL-RLDSQ-07",
+        "category": "Down Lights",
+        "subcategory": "Square Recessed",
+        "price": 2350,
+        "regular_price": 2800,
+        "price_on_request": false,
+        "stock": 195,
+        "display_order": 7,
+        "status": "active",
+        "is_featured": false,
+        "is_bestseller": false,
+        "rating": 4.5,
+        "reviews_count": 41,
+        "featured_image": "assets/images/products/rldsq.png",
+        "hover_image": "assets/images/products/rldsq_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/rldsq.png",
+            "assets/images/products/rldsq_hover.jpeg"
+        ],
+        "short_description": "Square aperture recessed architectural downlight with anti-glare louver grid.",
+        "full_description": "Clean square geometry designed for crisp architectural ceilings. The RLDSQ downlight combines a die-cast square bezel with high-output COB LED technology, creating a sharp modern lighting statement.",
+        "specifications": {
+            "wattage": [
+                "12W",
+                "18W",
+                "24W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White",
+                "6000K Cool White"
+            ],
+            "beam_angles": [
+                "24°",
+                "36°"
+            ],
+            "finishes": [
+                "Matt Black",
+                "Matt White"
+            ],
+            "input_voltage": "AC 220-240V",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Square Ceiling Recessed",
+            "dimensions": "95mm x 95mm x 85mm",
+            "luminous_flux": "1150 - 2400 Lumens",
+            "ugr": "< 16"
+        },
+        "features": [
+            "Architectural square die-cast aluminum trim",
+            "Deep recessed optic with square secondary cut-off",
+            "Easy spring-clip mounting into false ceilings",
+            "Reliable thermal heat dissipation"
+        ],
+        "applications": [
+            "Modern Commercial Offices",
+            "Hotel Guest Corridors",
+            "Contemporary Residences",
+            "Retail Showrooms"
+        ],
+        "seo": {
+            "meta_title": "Square Recessed Downlight | TeknoLite Architectural",
+            "meta_description": "TeknoLite square architectural recessed downlight with anti-glare baffle and high efficiency LED engine.",
+            "meta_keywords": "Square Recessed Light, Square Downlight, Architectural Downlight, TeknoLite",
+            "slug": "square-recessed-downlight"
+        }
+    },
+    "ely-linear": {
+        "id": "ely-linear",
+        "name": "Architectural Linear Pendant",
+        "slug": "architectural-linear-pendant",
+        "sku": "TL-ELY-08",
+        "category": "Linear Lighting",
+        "subcategory": "Linear Pendant",
+        "price": 4800,
+        "regular_price": 5600,
+        "price_on_request": true,
+        "stock": 85,
+        "display_order": 8,
+        "status": "active",
+        "is_featured": true,
+        "is_bestseller": true,
+        "rating": 4.9,
+        "reviews_count": 112,
+        "featured_image": "assets/images/products/ely.png",
+        "hover_image": "assets/images/products/ely_hover.jpeg",
+        "gallery_images": [
+            "assets/images/products/ely.png",
+            "assets/images/products/ely_hover.jpeg"
+        ],
+        "short_description": "Continuous suspended linear profile fixture with direct/indirect dual light distribution.",
+        "full_description": "The ELY Linear Pendant delivers seamless continuous lines of light with up-down lighting capability. Featuring precision opal micro-prismatic optics to prevent visual fatigue in modern offices, co-working studios, and conference spaces.",
+        "specifications": {
+            "wattage": [
+                "20W",
+                "36W",
+                "48W"
+            ],
+            "cct": [
+                "3000K Warm White",
+                "4000K Natural White"
+            ],
+            "beam_angles": [
+                "Direct 90° / Indirect 110°"
+            ],
+            "finishes": [
+                "Anodized Black",
+                "Anodized Silver",
+                "Matt White"
+            ],
+            "input_voltage": "AC 220-240V",
+            "cri": "> 90 Ra",
+            "ip_rating": "IP20",
+            "mounting": "Aircraft Cable Suspended / Surface",
+            "dimensions": "1200mm x 50mm x 75mm",
+            "luminous_flux": "2200 - 5200 Lumens",
+            "ugr": "< 19 Office Compliant"
+        },
+        "features": [
+            "Dual up/down emission for ceiling illumination and task lighting",
+            "Continuous joiner hardware for unbroken runs up to 30 meters",
+            "Micro-prismatic UGR < 19 glare control diffuser",
+            "Adjustable stainless steel aircraft cable suspension (1.5m)",
+            "Optional DALI-2 push-dim integrated protocol"
+        ],
+        "applications": [
+            "Open Plan Offices & Workspaces",
+            "Conference & Meeting Rooms",
+            "Architectural Design Studios",
+            "Educational Classrooms & Libraries",
+            "Reception Desks & Retail Counters"
+        ],
+        "seo": {
+            "meta_title": "Architectural Linear Pendant | Direct Indirect | TeknoLite",
+            "meta_description": "Continuous suspended linear profile lighting by TeknoLite. Features direct and indirect illumination for modern architectural workspaces.",
+            "meta_keywords": "Linear Pendant, Suspended Linear Light, Direct Indirect Light, Office Lighting, TeknoLite",
+            "slug": "architectural-linear-pendant"
+        }
+    }
+}

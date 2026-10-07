@@ -1,0 +1,736 @@
+{
+    "ENQ-583488": {
+        "id": "ENQ-583488",
+        "reference": "#583488/80",
+        "customer_name": "Gail C. Anderson",
+        "mobile": "+91 98201 45892",
+        "email": "gail.anderson@matrixbuild.com",
+        "company_name": "Wilson's Jewelers LTD",
+        "priority": "Normal",
+        "status": "New",
+        "created_at": "2024-04-23 18:23:00",
+        "date_formatted": "Apr 23, 2024",
+        "time_formatted": "06:23 pm",
+        "customer_message": "We require high CRI warm white downlights for a luxury jewelry showroom renovation. Need anti-glare optics (<16 UGR) and gold finish trim to match interior accents. Please provide quotation for 40 units with DALI dimmable drivers.",
+        "admin_remark": "New enquiry received from website. Initial review needed for DALI driver availability with our technical engineer.",
+        "products": [
+            {
+                "id": "cob-downlight",
+                "name": "LED COB Downlight",
+                "sku": "TL-GAMMA-01",
+                "category": "Cobspot Light",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 12,
+                "price": 1450,
+                "tax": 261,
+                "total": 20532,
+                "status": "Ready",
+                "specs": "12W \u2022 3000K Warm White \u2022 Brushed Gold \u2022 DALI"
+            },
+            {
+                "id": "led-track-light",
+                "name": "LED Track Light Pro",
+                "sku": "TL-TRACK-02",
+                "category": "Track Light",
+                "image": "assets/images/products/gamma_hover.jpeg",
+                "quantity": 8,
+                "price": 2200,
+                "tax": 396,
+                "total": 20768,
+                "status": "Ready",
+                "specs": "24W \u2022 4000K Natural White \u2022 Matt Black \u2022 24\u00b0 Beam"
+            }
+        ],
+        "total_quantity": 20,
+        "financials": {
+            "subtotal": 35200,
+            "discount": 1760,
+            "delivery_charge": 0,
+            "tax_amount": 6019.2,
+            "total_amount": 39459.2
+        },
+        "shipping_address": {
+            "contact_person": "Gail C. Anderson",
+            "company": "Wilson's Jewelers LTD",
+            "street": "1344 Hershell Hollow Road",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "zip": "400051",
+            "country": "India",
+            "phone": "(723) 732-760-5760"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Apr 23, 2024, 06:23 pm",
+                "title": "Enquiry Received",
+                "description": "Customer submitted enquiry through website product detail page.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Apr 23, 2024, 06:30 pm",
+                "title": "Automated Notification Sent",
+                "description": "Confirmation email dispatched to gail.anderson@matrixbuild.com.",
+                "user": "System",
+                "icon": "solar:letter-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:53 am",
+                "title": "Status: In Review",
+                "description": "Automated test remark - reviewing lux requirements.",
+                "user": "Admin",
+                "icon": "solar:clipboard-check-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:53 am",
+                "title": "Status: New",
+                "description": "New enquiry received from website. Initial review needed for DALI driver availability with our technical engineer.",
+                "user": "Admin",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 09:38 am",
+                "title": "Status: In Review",
+                "description": "Automated test remark - reviewing lux requirements.",
+                "user": "Admin",
+                "icon": "solar:clipboard-check-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 09:38 am",
+                "title": "Status: New",
+                "description": "New enquiry received from website. Initial review needed for DALI driver availability with our technical engineer.",
+                "user": "Admin",
+                "icon": "solar:inbox-line-broken"
+            }
+        ]
+    },
+    "ENQ-456754": {
+        "id": "ENQ-456754",
+        "reference": "#ENQ-456754/80",
+        "customer_name": "Jung S. Ayala",
+        "mobile": "+91 97112 84920",
+        "email": "jung.ayala@luxuryliving.in",
+        "company_name": "Ayala Luxury Living Studio",
+        "priority": "Normal",
+        "status": "Closed",
+        "created_at": "2024-04-20 14:15:00",
+        "date_formatted": "Apr 20, 2024",
+        "time_formatted": "02:15 pm",
+        "customer_message": "Need surface mounted architectural downlights for an exposed concrete ceiling penthouse in Bangalore. Looking for textured matt black finish.",
+        "admin_remark": "Order completely delivered and closed.",
+        "products": [
+            {
+                "id": "surface-mount-downlight",
+                "name": "Surface Mount Downlight",
+                "sku": "TL-SMD-03",
+                "category": "Architectural Indoor",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 18,
+                "price": 1850,
+                "tax": 333,
+                "total": 39294,
+                "status": "Ready",
+                "specs": "15W \u2022 3000K Warm \u2022 Matt Black \u2022 36\u00b0"
+            }
+        ],
+        "total_quantity": 18,
+        "financials": {
+            "subtotal": 33300,
+            "discount": 1665,
+            "delivery_charge": 500,
+            "tax_amount": 5784.3,
+            "total_amount": 37919.3
+        },
+        "shipping_address": {
+            "contact_person": "Jung S. Ayala",
+            "company": "Ayala Luxury Living",
+            "street": "88 Indiranagar 100ft Road",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "zip": "560038",
+            "country": "India",
+            "phone": "+91 97112 84920"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Apr 20, 2024, 02:15 pm",
+                "title": "Enquiry Received",
+                "description": "Website quote form submitted.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Apr 21, 2024, 10:00 am",
+                "title": "Status Updated: In Review",
+                "description": "Moved to technical design team for lux calculations.",
+                "user": "Admin",
+                "icon": "solar:clipboard-check-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:55 am",
+                "title": "Status: Quotation Sent",
+                "description": "Official quotation emailed to customer.",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:56 am",
+                "title": "Status: Confirmed",
+                "description": "Customer approved quote and confirmed order.",
+                "user": "Admin",
+                "icon": "solar:check-circle-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:56 am",
+                "title": "Status: Closed",
+                "description": "Order completely delivered and closed.",
+                "user": "Admin",
+                "icon": "solar:check-read-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:56 am",
+                "title": "Admin Remark Added",
+                "description": "Order completely delivered and closed.",
+                "user": "Admin",
+                "icon": "solar:check-read-broken"
+            }
+        ]
+    },
+    "ENQ-578246": {
+        "id": "ENQ-578246",
+        "reference": "#ENQ-578246/80",
+        "customer_name": "David A. Arnold",
+        "mobile": "+91 98450 12389",
+        "email": "david.arnold@grandresorts.com",
+        "company_name": "Arnold Hospitality Group",
+        "priority": "High",
+        "status": "Confirmed",
+        "created_at": "2024-04-19 11:30:00",
+        "date_formatted": "Apr 19, 2024",
+        "time_formatted": "11:30 am",
+        "customer_message": "Complete resort landscape lighting requirement. Need IP67 rated spike lights and bollards for pathways and garden areas. Total 60 fixtures required within 3 weeks.",
+        "admin_remark": "Customer approved quote and confirmed order.",
+        "products": [
+            {
+                "id": "garden-landscape-light",
+                "name": "Garden & Landscape Light",
+                "sku": "TL-LAND-05",
+                "category": "Outdoor & Landscape",
+                "image": "assets/images/products/gamma_hover.jpeg",
+                "quantity": 40,
+                "price": 2800,
+                "tax": 504,
+                "total": 132160,
+                "status": "Ready",
+                "specs": "IP67 \u2022 9W \u2022 3000K \u2022 Spike Mount \u2022 Dark Graphite"
+            },
+            {
+                "id": "spotlight-accent-series",
+                "name": "Spotlight Accent Series",
+                "sku": "TL-SPOT-06",
+                "category": "Outdoor & Landscape",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 20,
+                "price": 3100,
+                "tax": 558,
+                "total": 73160,
+                "status": "Ready",
+                "specs": "IP65 \u2022 18W \u2022 Tree Strapped \u2022 15\u00b0 Narrow"
+            }
+        ],
+        "total_quantity": 60,
+        "financials": {
+            "subtotal": 174000,
+            "discount": 20880,
+            "delivery_charge": 0,
+            "tax_amount": 27561.6,
+            "total_amount": 180681.6
+        },
+        "shipping_address": {
+            "contact_person": "David A. Arnold",
+            "company": "Grand Palolem Resorts",
+            "street": "Palolem Beach Road, Canacona",
+            "city": "Goa",
+            "state": "Goa",
+            "zip": "403702",
+            "country": "India",
+            "phone": "+91 98450 12389"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Apr 19, 2024, 11:30 am",
+                "title": "Enquiry Received",
+                "description": "Direct RFQ submitted via portal.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Apr 19, 2024, 04:00 pm",
+                "title": "Technical Evaluation Complete",
+                "description": "Selected IP67 drivers and spike units.",
+                "user": "Admin",
+                "icon": "solar:settings-minimalistic-broken"
+            },
+            {
+                "date": "Apr 20, 2024, 11:00 am",
+                "title": "Quotation Sent",
+                "description": "Quotation #QT-2024-578 emailed to david.arnold@grandresorts.com",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:56 am",
+                "title": "Status: Confirmed",
+                "description": "Customer approved quote and confirmed order.",
+                "user": "Admin",
+                "icon": "solar:check-circle-broken"
+            },
+            {
+                "date": "Sep 09, 2026, 08:56 am",
+                "title": "Admin Remark Added",
+                "description": "Customer approved quote and confirmed order.",
+                "user": "Admin",
+                "icon": "solar:check-circle-broken"
+            }
+        ]
+    },
+    "ENQ-348930": {
+        "id": "ENQ-348930",
+        "reference": "#ENQ-348930/80",
+        "customer_name": "Cecile D. Gordon",
+        "mobile": "+91 99304 88120",
+        "email": "cecile.gordon@lightingconsult.com",
+        "company_name": "Gordon Lighting Consulting",
+        "priority": "Normal",
+        "status": "Confirmed",
+        "created_at": "2024-04-04 16:45:00",
+        "date_formatted": "Apr 04, 2024",
+        "time_formatted": "04:45 pm",
+        "customer_message": "Corporate headquarters boardroom setup. Linear suspended luminaires with acoustic felt baffle integration.",
+        "admin_remark": "Advance payment received. Production scheduled at factory with expected dispatch on 28th April.",
+        "products": [
+            {
+                "id": "architectural-linear-pendant",
+                "name": "Architectural Linear Pendant",
+                "sku": "TL-LIN-08",
+                "category": "Decorative & Acoustic",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 10,
+                "price": 6500,
+                "tax": 1170,
+                "total": 76700,
+                "status": "Ready",
+                "specs": "2400mm \u2022 48W \u2022 4000K \u2022 Charcoal Grey Acoustic Felt"
+            }
+        ],
+        "total_quantity": 10,
+        "financials": {
+            "subtotal": 65000,
+            "discount": 3250,
+            "delivery_charge": 1200,
+            "tax_amount": 11331,
+            "total_amount": 74281
+        },
+        "shipping_address": {
+            "contact_person": "Cecile D. Gordon",
+            "company": "Gordon Lighting Consulting",
+            "street": "Tower B, Cyber City DLF Phase 2",
+            "city": "Gurugram",
+            "state": "Haryana",
+            "zip": "122002",
+            "country": "India",
+            "phone": "+91 99304 88120"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Apr 04, 2024, 04:45 pm",
+                "title": "Enquiry Received",
+                "description": "Custom acoustic fixture request submitted.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Apr 05, 2024, 02:30 pm",
+                "title": "Quotation Sent",
+                "description": "Quotation sent with acoustic test certificates.",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            },
+            {
+                "date": "Apr 08, 2024, 11:15 am",
+                "title": "Order Confirmed",
+                "description": "Client approved quotation and confirmed PO.",
+                "user": "Admin",
+                "icon": "solar:check-circle-broken"
+            }
+        ]
+    },
+    "ENQ-391367": {
+        "id": "ENQ-391367",
+        "reference": "#ENQ-391367/80",
+        "customer_name": "William Moreno",
+        "mobile": "+91 98110 56743",
+        "email": "william.moreno@morenoarch.com",
+        "company_name": "Moreno & Associates Architects",
+        "priority": "Normal",
+        "status": "Closed",
+        "created_at": "2024-04-02 09:10:00",
+        "date_formatted": "Apr 02, 2024",
+        "time_formatted": "09:10 am",
+        "customer_message": "Need sample units for villa entrance lighting. Will proceed with 80 units upon mock-up approval.",
+        "admin_remark": "Order fulfilled and delivered. Mock-up approved. Next Phase enquiry will be placed under new project code.",
+        "products": [
+            {
+                "id": "square-recessed-downlight",
+                "name": "Square Recessed Downlight",
+                "sku": "TL-SQ-07",
+                "category": "Cobspot Light",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 4,
+                "price": 1600,
+                "tax": 288,
+                "total": 7552,
+                "status": "Ready",
+                "specs": "15W \u2022 2700K Warm White \u2022 Matt White"
+            }
+        ],
+        "total_quantity": 4,
+        "financials": {
+            "subtotal": 6400,
+            "discount": 0,
+            "delivery_charge": 250,
+            "tax_amount": 1197,
+            "total_amount": 7847
+        },
+        "shipping_address": {
+            "contact_person": "William Moreno",
+            "company": "Moreno & Associates",
+            "street": "Plot 42, Jubilee Hills Road No. 36",
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "zip": "500033",
+            "country": "India",
+            "phone": "+91 98110 56743"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Apr 02, 2024, 09:10 am",
+                "title": "Enquiry Received",
+                "description": "Sample unit request logged.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Apr 03, 2024, 11:30 am",
+                "title": "Quotation Sent",
+                "description": "Sample pricing shared with waiver clause.",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            },
+            {
+                "date": "Apr 05, 2024, 03:00 pm",
+                "title": "Confirmed & Dispatched",
+                "description": "Samples shipped via Blue Dart tracking #BD882910.",
+                "user": "Admin",
+                "icon": "solar:box-broken"
+            },
+            {
+                "date": "Apr 10, 2024, 10:00 am",
+                "title": "Enquiry Closed",
+                "description": "Samples successfully delivered and approved.",
+                "user": "Admin",
+                "icon": "solar:check-read-broken"
+            }
+        ]
+    },
+    "ENQ-930447": {
+        "id": "ENQ-930447",
+        "reference": "#ENQ-930447/80",
+        "customer_name": "Alphonse Roy",
+        "mobile": "+91 97401 22987",
+        "email": "alphonse.roy@roycommercial.com",
+        "company_name": "Roy Commercial Developers",
+        "priority": "High",
+        "status": "Quotation Sent",
+        "created_at": "2024-03-28 15:20:00",
+        "date_formatted": "Mar 28, 2024",
+        "time_formatted": "03:20 pm",
+        "customer_message": "Complete shopping mall atrium lighting scheme. Need 3000K warm tone, wide beam angle linear fixtures with emergency backup battery packs.",
+        "admin_remark": "Technical proposal submitted with 3-hour emergency driver specifications. Awaiting commercial signoff.",
+        "products": [
+            {
+                "id": "round-linear-recessed",
+                "name": "Round Linear Recessed Light",
+                "sku": "TL-RLIN-04",
+                "category": "Architectural Indoor",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 30,
+                "price": 3400,
+                "tax": 612,
+                "total": 120360,
+                "status": "Ready",
+                "specs": "36W \u2022 3000K \u2022 Integrated Emergency Pack"
+            }
+        ],
+        "total_quantity": 30,
+        "financials": {
+            "subtotal": 102000,
+            "discount": 10200,
+            "delivery_charge": 0,
+            "tax_amount": 16524,
+            "total_amount": 108324
+        },
+        "shipping_address": {
+            "contact_person": "Alphonse Roy",
+            "company": "Roy Commercial Developers",
+            "street": "Roy Complex, MG Road",
+            "city": "Kochi",
+            "state": "Kerala",
+            "zip": "682016",
+            "country": "India",
+            "phone": "+91 97401 22987"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Mar 28, 2024, 03:20 pm",
+                "title": "Enquiry Received",
+                "description": "Mall atrium quote request received.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Mar 29, 2024, 05:00 pm",
+                "title": "Quotation Sent",
+                "description": "Detailed BOQ and emergency driver compliance certificate sent.",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            }
+        ]
+    },
+    "ENQ-462397": {
+        "id": "ENQ-462397",
+        "reference": "#ENQ-462397/80",
+        "customer_name": "Pierpont Marleau",
+        "mobile": "+91 98840 77154",
+        "email": "pierpont@marleaudesign.org",
+        "company_name": "Marleau Retail Group",
+        "priority": "High",
+        "status": "Closed",
+        "created_at": "2024-03-20 12:00:00",
+        "date_formatted": "Mar 20, 2024",
+        "time_formatted": "12:00 pm",
+        "customer_message": "Boutique fashion showroom track lighting. Looking for 3-circuit track spotlights with honeycomb louvre attachments.",
+        "admin_remark": "Fulfilled and closed successfully.",
+        "products": [
+            {
+                "id": "led-track-light",
+                "name": "LED Track Light Pro",
+                "sku": "TL-TRACK-02",
+                "category": "Track Light",
+                "image": "assets/images/products/gamma_hover.jpeg",
+                "quantity": 16,
+                "price": 2200,
+                "tax": 396,
+                "total": 41536,
+                "status": "Ready",
+                "specs": "30W \u2022 3000K \u2022 CRI>95 \u2022 Honeycomb Louvre"
+            }
+        ],
+        "total_quantity": 16,
+        "financials": {
+            "subtotal": 35200,
+            "discount": 1760,
+            "delivery_charge": 400,
+            "tax_amount": 6091.2,
+            "total_amount": 39931.2
+        },
+        "shipping_address": {
+            "contact_person": "Pierpont Marleau",
+            "company": "Marleau Retail",
+            "street": "Phoenix Palladium, Lower Parel",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "zip": "400013",
+            "country": "India",
+            "phone": "+91 98840 77154"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Mar 20, 2024, 12:00 pm",
+                "title": "Enquiry Received",
+                "description": "Retail track lighting enquiry logged.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Mar 25, 2024, 04:00 pm",
+                "title": "Enquiry Closed",
+                "description": "Goods delivered and inspected at site.",
+                "user": "Admin",
+                "icon": "solar:check-read-broken"
+            }
+        ]
+    },
+    "ENQ-472356": {
+        "id": "ENQ-472356",
+        "reference": "#ENQ-472356/80",
+        "customer_name": "Madeleine Gervais",
+        "mobile": "+91 96190 33412",
+        "email": "madeleine.gervais@designcube.in",
+        "company_name": "Design Cube Architects",
+        "priority": "Normal",
+        "status": "Confirmed",
+        "created_at": "2024-03-12 17:05:00",
+        "date_formatted": "Mar 12, 2024",
+        "time_formatted": "05:05 pm",
+        "customer_message": "Modern villa outdoor facade illumination. Need IP65 warm white wall washers with asymmetric beam distribution.",
+        "admin_remark": "Order confirmed. Client transferred 50% advance. Delivery scheduled for 1st May.",
+        "products": [
+            {
+                "id": "spotlight-accent-series",
+                "name": "Spotlight Accent Series",
+                "sku": "TL-SPOT-06",
+                "category": "Outdoor & Landscape",
+                "image": "assets/images/products/gamma.png",
+                "quantity": 12,
+                "price": 3100,
+                "tax": 558,
+                "total": 43896,
+                "status": "Ready",
+                "specs": "IP65 \u2022 24W \u2022 3000K \u2022 Asymmetric 15x45\u00b0"
+            }
+        ],
+        "total_quantity": 12,
+        "financials": {
+            "subtotal": 37200,
+            "discount": 1860,
+            "delivery_charge": 500,
+            "tax_amount": 6451.2,
+            "total_amount": 42291.2
+        },
+        "shipping_address": {
+            "contact_person": "Madeleine Gervais",
+            "company": "Design Cube Architects",
+            "street": "Koregaon Park Road No. 5",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "zip": "411001",
+            "country": "India",
+            "phone": "+91 96190 33412"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Mar 12, 2024, 05:05 pm",
+                "title": "Enquiry Received",
+                "description": "Facade lighting quote request.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Mar 14, 2024, 01:00 pm",
+                "title": "Quotation Sent",
+                "description": "Quotation #QT-2024-472 sent with beam simulation.",
+                "user": "Admin",
+                "icon": "solar:letter-opened-broken"
+            },
+            {
+                "date": "Mar 18, 2024, 11:30 am",
+                "title": "Order Confirmed",
+                "description": "PO received and confirmed.",
+                "user": "Admin",
+                "icon": "solar:check-circle-broken"
+            }
+        ]
+    },
+    "ENQ-448226": {
+        "id": "ENQ-448226",
+        "reference": "#ENQ-448226/80",
+        "customer_name": "Satordi Gaillou",
+        "mobile": "+91 98230 99881",
+        "email": "satordi.gaillou@urbanlight.com",
+        "company_name": "Gaillou Architectural Lighting",
+        "priority": "High",
+        "status": "In Review",
+        "created_at": "2024-03-02 10:40:00",
+        "date_formatted": "Mar 02, 2024",
+        "time_formatted": "10:40 am",
+        "customer_message": "Heritage building facade restoration lighting in Jaipur. Strict requirement for 2200K super-warm color temperature and custom sand-beige powder coating.",
+        "admin_remark": "Contacted LED driver supplier for custom 2200K Nichia emitter batch availability. Feasibility confirmed.",
+        "products": [
+            {
+                "id": "garden-landscape-light",
+                "name": "Garden & Landscape Light",
+                "sku": "TL-LAND-05",
+                "category": "Outdoor & Landscape",
+                "image": "assets/images/products/gamma_hover.jpeg",
+                "quantity": 25,
+                "price": 2800,
+                "tax": 504,
+                "total": 82600,
+                "status": "Ready",
+                "specs": "IP67 \u2022 Custom 2200K Super-Warm \u2022 Sand Beige"
+            }
+        ],
+        "total_quantity": 25,
+        "financials": {
+            "subtotal": 70000,
+            "discount": 3500,
+            "delivery_charge": 800,
+            "tax_amount": 12114,
+            "total_amount": 79414
+        },
+        "shipping_address": {
+            "contact_person": "Satordi Gaillou",
+            "company": "Gaillou Architectural",
+            "street": "C-Scheme, Subhash Marg",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "zip": "302001",
+            "country": "India",
+            "phone": "+91 98230 99881"
+        },
+        "billing_address": {
+            "same_as_shipping": true
+        },
+        "timeline": [
+            {
+                "date": "Mar 02, 2024, 10:40 am",
+                "title": "Enquiry Received",
+                "description": "Heritage restoration enquiry submitted.",
+                "user": "System",
+                "icon": "solar:inbox-line-broken"
+            },
+            {
+                "date": "Mar 03, 2024, 03:15 pm",
+                "title": "In Review",
+                "description": "Custom color temp and finish under review with R&D team.",
+                "user": "Admin",
+                "icon": "solar:clipboard-check-broken"
+            }
+        ]
+    }
+}

@@ -1,0 +1,1839 @@
+/* ==========================================================================
+   Teknolite Responsive Overrides CSS
+   Handles responsiveness adjustments for mobile, tablet, and desktop viewports.
+   ========================================================================== */
+
+/* --- Base Layout Safety & Global Responsive Styles --- */
+#wrapper {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+/* ==========================================================================
+   Teknolite Wishlist System & Ecommerce Badge Styles
+   ========================================================================== */
+
+/* Universal count badge styling for wishlist - E-commerce Standard */
+.wishlist-count,
+.header-default .nav-icon .count-box.wishlist-count,
+.tf-toolbar-bottom .toolbar-item .count-box.wishlist-count {
+    position: absolute;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background-color: #e11d48 !important; /* Premium ecommerce crimson */
+    color: #ffffff !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 18px !important;
+    letter-spacing: -0.2px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff !important;
+    box-shadow: 0 2px 4px rgba(225, 29, 72, 0.35);
+    pointer-events: none;
+    z-index: 5;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+}
+
+/* Header position */
+.header-default .nav-icon .nav-wishlist {
+    position: relative;
+}
+.header-default .nav-icon .nav-icon-item .wishlist-count {
+    top: -4px;
+    right: -7px;
+}
+
+/* Sticky header adjustments */
+#header.is-sticky .header-default .nav-icon .nav-icon-item .wishlist-count,
+#header.is-sticky .wishlist-count {
+    border-color: #ffffff !important;
+}
+
+/* Mobile bottom toolbar badge */
+.tf-toolbar-bottom .toolbar-item a .toolbar-icon {
+    position: relative;
+}
+.tf-toolbar-bottom .toolbar-item a .toolbar-icon .wishlist-count {
+    top: -4px;
+    right: -8px;
+    border: 1.5px solid #ffffff !important;
+}
+
+/* Mobile drawer menu wishlist badge */
+.mobile-wishlist-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-wishlist-badge {
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: #e11d48;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge pulse animation on add/update */
+.wishlist-count.bump,
+.wishlist-count.anim-pulse {
+    animation: badgePulse 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes badgePulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Active Wishlist Heart Buttons across all product cards and pages */
+.box-icon.wishlist.active,
+.btn-icon-action.wishlist.active {
+    background-color: #fee2e2 !important;
+    border-color: #fca5a5 !important;
+}
+.box-icon.wishlist.active .icon-heart,
+.btn-icon-action.wishlist.active .icon-heart {
+    color: #e11d48 !important;
+    font-weight: 700;
+}
+.box-icon.wishlist.active:hover,
+.btn-icon-action.wishlist.active:hover {
+    background-color: #fecdd3 !important;
+}
+
+/* Product Detail Page Wishlist Button Active */
+.teknolite-btn-wishlist.active {
+    background-color: #fff1f2 !important;
+    border-color: #f43f5e !important;
+    color: #e11d48 !important;
+}
+.teknolite-btn-wishlist.active .icon-heart {
+    color: #e11d48 !important;
+}
+
+/* ==========================================================================
+   Dedicated Wishlist Drawer Modal
+   ========================================================================== */
+.wishlist-modal .modal-dialog {
+    width: 100%;
+    max-width: 440px;
+    min-width: 0;
+    margin: 0 0 0 auto;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.wishlist-modal.show .modal-dialog {
+    transform: translateX(0);
+}
+
+.wishlist-modal .modal-content {
+    width: 100%;
+    max-width: 440px;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Main inner container */
+.wishlist-modal-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Header */
+.wishlist-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eef2f6;
+    background: #ffffff;
+    flex-shrink: 0;
+}
+
+.wishlist-modal-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wishlist-modal-title-wrap .icon-heart {
+    color: #e11d48;
+    font-size: 18px;
+}
+
+.wishlist-modal-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.2px;
+}
+
+.wishlist-modal-title-badge {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+.wishlist-modal-close {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.wishlist-modal-close:hover {
+    background: #f8fafc;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+/* Body / List of Items */
+.wishlist-modal-body {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 14px 16px;
+    background: #fafbfc;
+    overscroll-behavior: contain;
+}
+
+/* Custom slim scrollbar */
+.wishlist-modal-body::-webkit-scrollbar {
+    width: 5px;
+}
+.wishlist-modal-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.wishlist-modal-body::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+   Small & Perfect Wishlist Item Card
+   ========================================================================== */
+.wishlist-modal-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+
+.wishlist-modal-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.wishlist-modal-item.removing {
+    opacity: 0;
+    transform: translateX(30px);
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+
+/* Small thumbnail */
+.wishlist-modal-image {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 6px;
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.wishlist-modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.wishlist-modal-item:hover .wishlist-modal-image img {
+    transform: scale(1.06);
+}
+
+/* Compact details */
+.wishlist-modal-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.wishlist-modal-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.wishlist-modal-name:hover {
+    color: #0d6efd;
+}
+
+.wishlist-modal-category {
+    font-size: 11px;
+    font-weight: 500;
+    color: #64748b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+}
+
+/* Mini action buttons inside the small card */
+.wishlist-modal-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.wishlist-modal-btn-enquire {
+    font-size: 10.5px;
+    font-weight: 600;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: #0f172a;
+    color: #ffffff !important;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.wishlist-modal-btn-enquire:hover {
+    background: #1e293b;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+.wishlist-modal-btn-enquire i {
+    font-size: 8px;
+}
+
+.wishlist-modal-btn-view {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #64748b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.wishlist-modal-btn-view:hover {
+    color: #0f172a;
+}
+
+/* Small, subtle remove button */
+.wishlist-modal-remove {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0;
+    transition: all 0.15s ease;
+}
+
+.wishlist-modal-remove:hover {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+/* ==========================================================================
+   Wishlist Footer & Actions
+   ========================================================================== */
+.wishlist-modal-footer {
+    padding: 14px 18px 16px;
+    border-top: 1px solid #eef2f6;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.wishlist-modal-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.wishlist-modal-summary strong {
+    color: #0f172a;
+}
+
+.wishlist-modal-btn-enquire-all {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.wishlist-modal-btn-enquire-all:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.wishlist-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wishlist-modal-actions .tf-btn {
+    flex: 1;
+    height: 36px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Empty State
+   ========================================================================== */
+.wishlist-modal-empty {
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.wishlist-modal-empty-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #fff1f2;
+    color: #e11d48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.wishlist-modal-empty h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.wishlist-modal-empty p {
+    font-size: 12px;
+    color: #64748b;
+    max-width: 250px;
+    margin: 0 auto 16px;
+    line-height: 1.45;
+}
+
+.wishlist-modal-empty .tf-btn {
+    height: 36px;
+    padding: 0 18px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Quick recommendations in empty state */
+.wishlist-empty-recs {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eef2f6;
+    text-align: left;
+}
+
+.wishlist-empty-recs-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.wishlist-empty-rec-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    transition: all 0.15s ease;
+}
+
+.wishlist-empty-rec-item:hover {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+}
+
+.wishlist-empty-rec-item img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 4px;
+    background: #f8fafc;
+    padding: 2px;
+}
+
+.wishlist-empty-rec-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.wishlist-empty-rec-info .name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wishlist-empty-rec-info .cat {
+    font-size: 10.5px;
+    color: #64748b;
+}
+
+.wishlist-empty-rec-btn {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.wishlist-empty-rec-btn:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+@media (max-width: 767px) {
+    .wishlist-modal .modal-dialog {
+        max-width: 100%;
+        width: 100%;
+    }
+    .wishlist-modal .modal-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .wishlist-modal-footer {
+        padding: 12px 14px 16px;
+    }
+}
+
+/* Prevent banner images from stretching/distorting on wide desktop screens */
+.tf-slideshow .wrap-slider .img-style img {
+    object-fit: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Align header content with the main layout container on large screens */
+@media (min-width: 1200px) {
+    .header-default .container-full {
+        max-width: 1320px !important;
+        margin: 0 auto !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* Fix experience section columns overflow due to gap + percentage widths */
+@media (min-width: 992px) {
+    .experience-image {
+        width: calc(70% - 35px) !important;
+    }
+    .experience-content {
+        width: calc(30% - 35px) !important;
+    }
+}
+
+/* Universal responsive section padding */
+@media (max-width: 767px) {
+    .category-section, 
+    .about-section, 
+    .why-section, 
+    .project-section, 
+    .experience-section, 
+    .tl-testimonials-section, 
+    .footer-cta {
+        padding: clamp(40px, 8vw, 60px) 0 !important;
+    }
+}
+
+/* --- Continuous testimonial wall --- */
+.teknolite-testimonial-wall {
+    overflow: hidden;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    height: 680px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+}
+
+.testimonial-column {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    will-change: transform;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.testimonial-column.scroll-up .testimonial-track {
+    animation-name: testimonialScrollUp;
+}
+
+.testimonial-column.scroll-down .testimonial-track {
+    animation-name: testimonialScrollDown;
+    transform: translateY(-50%);
+}
+
+.testimonial-column:hover .testimonial-track {
+    animation-play-state: paused;
+}
+
+.testimonial-wall-card {
+    flex: 0 0 auto;
+    min-height: 270px;
+    padding: 28px 26px;
+    border: 1px solid rgba(24, 24, 24, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(24, 24, 24, 0.07);
+}
+
+.testimonial-wall-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 22px;
+    color: var(--Primary);
+    font-size: 17px;
+}
+
+.testimonial-wall-card p {
+    min-height: 112px;
+    margin: 0 0 24px;
+    color: var(--Onsurface);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.testimonial-wall-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid rgba(24, 24, 24, 0.1);
+    padding-top: 18px;
+}
+
+.testimonial-wall-author > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.testimonial-wall-author small {
+    color: var(--Secondary);
+    font-size: 13px;
+}
+
+.testimonial-wall-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 50%;
+    background: var(--Onsurface);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@keyframes testimonialScrollUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+}
+
+@keyframes testimonialScrollDown {
+    from { transform: translateY(-50%); }
+    to { transform: translateY(0); }
+}
+
+@media (max-width: 1199px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        height: 620px;
+    }
+
+    .testimonial-column:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-grid {
+        grid-template-columns: minmax(0, 1fr);
+        height: 560px;
+    }
+
+    .testimonial-column:nth-child(2) {
+        display: none;
+    }
+
+    .testimonial-wall-card {
+        min-height: 250px;
+        padding: 24px 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-track {
+        animation-play-state: paused;
+        transform: none !important;
+    }
+}
+
+/* Universal section title and text responsiveness */
+h2.header, h3.header, .heading-section h2, .heading-section h3 {
+    font-size: clamp(24px, 4vw, 38px) !important;
+    line-height: 1.25 !important;
+}
+.heading-section p, .text_secondary {
+    font-size: clamp(13px, 1.5vw, 15px) !important;
+    line-height: 1.6 !important;
+}
+
+/* --- Slideshow / Swiper Heights & Typography --- */
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+    .tf-slideshow.style-3 .swiper {
+        height: 520px !important;
+    }
+    .tf-slideshow.style-3 .box-content {
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        gap: 24px !important;
+        width: 88% !important;
+        padding: 24px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-display {
+        font-size: 30px !important;
+        line-height: 38px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-body-1 {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+    .tf-slideshow.style-3 .swiper {
+        height: 420px !important;
+    }
+    .tf-slideshow.style-3 .box-content {
+        top: 50% !important;
+        transform: translate(-50%, -100%) !important;
+        gap: 16px !important;
+        width: 90% !important;
+        padding: 20px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-display {
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-body-1 {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+    .tf-slideshow.style-3 .tf-btn {
+        height: 44px !important;
+        padding: 0 20px !important;
+        font-size: 14px !important;
+        line-height: 44px !important;
+    }
+    .tf-slideshow.style-3 .sw-button {
+        display: none !important;
+    }
+    .tf-slideshow.style-3 .wrap-pagination {
+        bottom: 16px !important;
+    }
+    /* Banner image: cover on mobile so no distortion */
+    .tf-slideshow .wrap-slider .img-style img {
+        object-fit: cover !important;
+        height: 100% !important;
+    }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .tf-slideshow.style-3 .swiper {
+        height: 360px !important;
+    }
+    .tf-slideshow.style-3 .box-content {
+        width: 92% !important;
+        padding: 16px !important;
+        gap: 12px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-display {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-body-1 {
+        font-size: 13px !important;
+        line-height: 18px !important;
+    }
+    .about-new-img-wrap {
+        height: 280px !important;
+    }
+}
+
+/* Extra small mobile (≤ 380px) */
+@media (max-width: 380px) {
+    .tf-slideshow.style-3 .swiper {
+        height: 300px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-display {
+        font-size: 17px !important;
+        line-height: 22px !important;
+    }
+    .tf-slideshow.style-3 .box-content .text-body-1 {
+        font-size: 12px !important;
+        line-height: 16px !important;
+    }
+}
+
+/* --- Category Section CSS Grid Fix --- */
+@media (max-width: 991px) {
+    .category-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .right-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: auto !important;
+    }
+    .category-grid .top-card {
+        grid-column: 1 / 3 !important; /* Span across both columns on tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .right-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .category-grid .top-card {
+        grid-column: 1 / -1 !important; /* Span single column on mobile */
+    }
+}
+
+/* --- About Section Statistics & Description --- */
+@media (max-width: 991px) {
+    .about-stats {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px !important;
+        text-align: center !important;
+    }
+    .about-stat {
+        width: 100% !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+    }
+    /* Add borders between columns */
+    .about-stat:nth-child(odd) {
+        border-right: 1px solid #ececec !important;
+    }
+    /* Let the 5th stat center and span both columns */
+    .about-stat:nth-child(5) {
+        grid-column: span 2 !important;
+        border-right: none !important;
+        margin-top: 10px !important;
+    }
+    /* Override justify-alignment on narrow columns for legibility */
+    .about-section .about-new-desc.text-justify {
+        text-align: left !important;
+    }
+}
+
+/* --- Products Section Background Overlay --- */
+.products-section .container {
+    position: relative;
+}
+
+.products-section .gray-bg {
+    background-color: #F2F2F2 !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    inset: -20px 0 !important; /* Stretches dynamically to cover the exact height of the products grid */
+    z-index: -1 !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    top: -20px !important;
+    bottom: -20px !important;
+    left: 15px !important;
+    right: 15px !important;
+    margin: 0 !important; /* Remove negative margin to prevent horizontal scrolling on mobile */
+}
+
+/* --- Project Section Alignment Fix --- */
+.explore {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; /* Fixes align-item typo */
+}
+
+/* --- Mobile Header: Hamburger Toggle Right-Aligned --- */
+/* Ensure logo col + toggle col fill the full row correctly on all sizes */
+@media (max-width: 1199px) {
+    header#header .wrapper-header {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+    }
+    /* Logo: fixed left, takes only what it needs */
+    header#header .wrapper-header > div:first-child {
+        flex: 0 0 auto !important;
+    }
+    /* Toggle: push to right edge */
+    header#header .wrapper-header > div.d-xl-none {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+    header#header .mobile-menu {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        padding: 8px !important;
+    }
+    /* Make the hamburger icon clearly visible on dark/transparent header */
+    header#header .mobile-menu svg {
+        width: 28px !important;
+        height: 28px !important;
+        fill: #ffffff !important;
+    }
+    header#header .mobile-menu svg path {
+        fill: #ffffff !important;
+    }
+}
+
+/* --- Modal z-index Fix: appear above the offcanvas sidebar ---
+   Bootstrap offcanvas: z-index 1045
+   Bootstrap modal backdrop: z-index 1050
+   Bootstrap modal: z-index 1055
+   The offcanvas canvas-mb uses isolation:isolate which can trap modals.
+   Fix: disable isolation on the inner content and raise modal z-index.
+   ----------------------------------------------------------------- */
+.canvas-mb .mb-canvas-content {
+    isolation: auto !important; /* remove stacking context that traps modals */
+}
+
+/* Raise modal and its backdrop above the offcanvas */
+.modal {
+    z-index: 1056 !important;
+}
+.modal-backdrop {
+    z-index: 1055 !important;
+}
+
+/* Ensure the offcanvas backdrop does NOT overlap the modal */
+.offcanvas-backdrop {
+    z-index: 1040 !important;
+}
+
+/* --- Experience Section Button Fixes --- */
+.experience-section .tf-btn.btn-white {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px 32px !important;
+    /* border: 1px solid #222 !important;
+    border-radius: 50px !important;
+    background: #fff !important;
+    color: #111 !important; */
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.experience-section .tf-btn.btn-white:hover {
+    background: #111 !important;
+    color: #fff !important;
+    border-color: #111 !important;
+}
+
+/* Centering utility for components */
+.center-btn-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* --- Modal Form Dialog & Buttons Responsiveness --- */
+
+/* Base: desktop (all screens) */
+#enquiryForm .modal-dialog,
+#downloadCatalogModal .modal-dialog {
+    max-width: 620px !important;
+    margin: 1.75rem auto !important;
+    width: 100% !important;
+}
+
+#enquiryForm .modal-content,
+#downloadCatalogModal .modal-content {
+    padding: 32px 36px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Header row (title + close icon) */
+#enquiryForm .modal-content > .d-flex,
+#downloadCatalogModal .modal-content > .d-flex {
+    margin-bottom: 20px !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+#enquiryForm .modal-content h5,
+#downloadCatalogModal .modal-content h5 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    flex: 1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Form fields */
+#enquiryForm .form-control,
+#downloadCatalogModal .form-control {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 15px !important;
+    min-height: 46px !important;
+}
+
+#enquiryForm textarea.form-control,
+#downloadCatalogModal textarea.form-control {
+    min-height: 100px !important;
+    resize: vertical !important;
+}
+
+/* Select wrapper */
+#enquiryForm .tf-select,
+#downloadCatalogModal .tf-select {
+    width: 100% !important;
+}
+
+/* Action buttons row */
+#enquiryForm form .d-flex.gap-2,
+#downloadCatalogModal form .d-flex.gap-2 {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+}
+
+#enquiryForm form .d-flex.gap-2 .tf-btn,
+#downloadCatalogModal form .d-flex.gap-2 .tf-btn,
+#enquiryForm form .d-flex.gap-2 a.tf-btn,
+#downloadCatalogModal form .d-flex.gap-2 a.tf-btn {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    font-size: 15px !important;
+    height: 48px !important;
+    padding: 0 16px !important;
+}
+
+/* --- Tablet (≤ 768px) --- */
+@media (max-width: 768px) {
+    #enquiryForm .modal-dialog,
+    #downloadCatalogModal .modal-dialog {
+        max-width: calc(100% - 2rem) !important;
+        margin: 1.25rem auto !important;
+    }
+
+    #enquiryForm .modal-content,
+    #downloadCatalogModal .modal-content {
+        padding: 28px 28px !important;
+    }
+
+    /* Switch two-column fields to single column on tablet */
+    #enquiryForm .col-md-6,
+    #downloadCatalogModal .col-md-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* --- Mobile (≤ 576px) --- */
+@media (max-width: 576px) {
+    #enquiryForm .modal-dialog,
+    #downloadCatalogModal .modal-dialog {
+        margin: 0.75rem !important;
+        max-width: calc(100% - 1.5rem) !important;
+        align-self: flex-end !important; /* Slide up from bottom on small screens */
+    }
+
+    /* Allow modal to scroll if content is taller than viewport */
+    #enquiryForm,
+    #downloadCatalogModal {
+        align-items: flex-end !important;
+    }
+
+    #enquiryForm .modal-content,
+    #downloadCatalogModal .modal-content {
+        padding: 24px 20px !important;
+        border-radius: 16px 16px 0 0 !important;
+        max-height: 92dvh !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    #enquiryForm .modal-content h5,
+    #downloadCatalogModal .modal-content h5 {
+        font-size: 17px !important;
+    }
+
+    #enquiryForm .form-control,
+    #downloadCatalogModal .form-control {
+        font-size: 16px !important; /* Prevents iOS auto-zoom on focus */
+        min-height: 48px !important;
+        padding: 10px 14px !important;
+    }
+
+    #enquiryForm textarea.form-control,
+    #downloadCatalogModal textarea.form-control {
+        min-height: 90px !important;
+        padding: 12px 14px !important;
+    }
+
+    /* Stack buttons vertically on mobile */
+    #enquiryForm form .d-flex.gap-2,
+    #downloadCatalogModal form .d-flex.gap-2 {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    #enquiryForm form .d-flex.gap-2 .tf-btn,
+    #downloadCatalogModal form .d-flex.gap-2 .tf-btn,
+    #enquiryForm form .d-flex.gap-2 a.tf-btn,
+    #downloadCatalogModal form .d-flex.gap-2 a.tf-btn {
+        width: 100% !important;
+        flex: none !important;
+        height: 50px !important;
+        font-size: 15px !important;
+    }
+
+    /* Col overrides */
+    #enquiryForm .col-md-6,
+    #downloadCatalogModal .col-md-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Tighten label spacing */
+    #enquiryForm .mb-3,
+    #downloadCatalogModal .mb-3 {
+        margin-bottom: 14px !important;
+    }
+
+    #enquiryForm .form-label,
+    #downloadCatalogModal .form-label {
+        font-size: 13px !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+/* --- Extra small (≤ 380px) --- */
+@media (max-width: 380px) {
+    #enquiryForm .modal-content,
+    #downloadCatalogModal .modal-content {
+        padding: 20px 16px !important;
+    }
+
+    #enquiryForm .modal-content h5,
+    #downloadCatalogModal .modal-content h5 {
+        font-size: 15px !important;
+    }
+
+    #enquiryForm form .d-flex.gap-2 .tf-btn,
+    #downloadCatalogModal form .d-flex.gap-2 .tf-btn,
+    #enquiryForm form .d-flex.gap-2 a.tf-btn,
+    #downloadCatalogModal form .d-flex.gap-2 a.tf-btn {
+        height: 46px !important;
+        font-size: 14px !important;
+    }
+}
+/* --- Sticky Header Overrides (Active on Scroll) --- */
+header#header.is-sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background-color: #ffffff !important; /* Elegant solid dark background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ensure link items inside the sticky header are readable and white */
+header#header.is-sticky .box-nav-ul .item-link {
+    color: #000000 !important;
+}
+header#header.is-sticky .box-nav-ul .item-link:hover {
+    color: #0d6efd !important;
+}
+
+/* mobile hamburger menu icon inherits white fill */
+header#header.is-sticky .mobile-menu svg {
+    fill: #ffffff !important;
+}
+header#header.is-sticky .mobile-menu svg path {
+    fill: #ffffff !important;
+}
+
+/* --- Header dropdown and mobile toggle fixes --- */
+#header,
+#header .main-header,
+#header .container-full,
+#header .wrapper-header {
+    overflow: visible;
+}
+
+#header {
+    position: absolute;
+    z-index: 1000 !important;
+}
+
+#header .box-navigation,
+#header .box-nav-ul,
+#header .box-nav-ul .menu-item.dropdown {
+    position: relative;
+}
+
+#header .box-nav-ul .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 9999;
+    display: none;
+    min-width: 210px;
+    padding: 8px 0;
+    margin: 0;
+    transform: translateX(-50%);
+    border: 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#header .box-nav-ul .dropdown-menu.show,
+#header .box-nav-ul .menu-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+#header .box-nav-ul .dropdown-item {
+    display: block;
+    padding: 9px 18px;
+    color: #222;
+    white-space: nowrap;
+}
+
+#header .box-nav-ul .dropdown-item:hover,
+#header .box-nav-ul .dropdown-item:focus {
+    background: #f7f7f7;
+    color: var(--Primary);
+}
+
+@media (max-width: 1199px) {
+    #header .mobile-menu-col {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        min-width: 0;
+    }
+
+    #header .mobile-menu {
+        position: relative;
+        z-index: 10001;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 8px;
+        color: #fff;
+    }
+
+    #header .mobile-menu-lines,
+    #header .mobile-menu-lines span {
+        display: block;
+    }
+
+    #header .mobile-menu-lines {
+        width: 26px;
+    }
+
+    #header .mobile-menu-lines span {
+        height: 2px;
+        margin: 5px 0;
+        background: currentColor;
+    }
+}
+
+/* ==========================================================================
+   Homepage 4-Column Products Grid (4 products per row on desktop)
+   ========================================================================== */
+.home-products-4col,
+.home-products-5col {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 20px !important;
+    row-gap: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+@media (min-width: 576px) {
+    .home-products-4col,
+    .home-products-5col {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-products-4col,
+    .home-products-5col {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-products-4col,
+    .home-products-5col {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+/* 4 products on 1 line on desktop */
+@media (min-width: 1200px) {
+    .home-products-4col,
+    .home-products-5col {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+/* ==========================================================================
+   Case Study Images: Square (1:1) and Centered
+   ========================================================================== */
+.teknolite-case-hero {
+    text-align: center !important;
+}
+
+.teknolite-case-hero .container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.case-hero-image {
+    width: 100% !important;
+    max-width: 580px !important;
+    aspect-ratio: 1 / 1 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+    border-radius: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.case-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.case-image,
+.related-case-image {
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+}
+
+.case-image img,
+.related-case-image img {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* ==========================================================================
+   Floating WhatsApp Button (Positioned Directly Above Scroll Top)
+   ========================================================================== */
+@keyframes wa-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 4px 18px rgba(37, 211, 102, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0), 0 4px 18px rgba(37, 211, 102, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 4px 18px rgba(37, 211, 102, 0.4);
+    }
+}
+
+.floating-whatsapp-btn {
+    position: fixed !important;
+    bottom: 152px !important;
+    right: 20px !important;
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #25D366 !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4) !important;
+    z-index: 999 !important;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer !important;
+    animation: wa-pulse 2.5s infinite;
+}
+
+.floating-whatsapp-btn:hover {
+    background-color: #1eb956 !important;
+    color: #ffffff !important;
+    transform: translateY(-4px) scale(1.06) !important;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6) !important;
+    animation: none;
+}
+
+.floating-whatsapp-btn svg {
+    width: 26px !important;
+    height: 26px !important;
+    fill: #ffffff !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.floating-whatsapp-btn:hover svg {
+    transform: scale(1.1) !important;
+}
+
+.floating-whatsapp-btn .whatsapp-tooltip {
+    position: absolute;
+    right: 60px;
+    background: #181818;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.floating-whatsapp-btn .whatsapp-tooltip::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #181818;
+}
+
+.floating-whatsapp-btn:hover .whatsapp-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Desktop View (Matches Desktop #scroll-top: bottom 40px, right 40px) */
+@media (min-width: 1200px) {
+    .floating-whatsapp-btn {
+        bottom: 100px !important;
+        right: 40px !important;
+        width: 52px !important;
+        height: 52px !important;
+    }
+    .floating-whatsapp-btn svg {
+        width: 29px !important;
+        height: 29px !important;
+    }
+    .floating-whatsapp-btn .whatsapp-tooltip {
+        right: 66px;
+    }
+}
+
+/* On pages with #scroll-top.style-1 (bottom 140px mobile / 80px desktop) */
+body:has(#scroll-top.style-1) .floating-whatsapp-btn {
+    bottom: 200px !important;
+}
+@media (min-width: 1200px) {
+    body:has(#scroll-top.style-1) .floating-whatsapp-btn {
+        bottom: 140px !important;
+    }
+}
+
+/* ==========================================================================
+   TeknoLite Connect CTA Section (2-Card Image Banner Style)
+   Matches reference design: rich ambient photo background, dark overlay,
+   white typography, and sleek white pill capsule button.
+   ========================================================================== */
+
+.teknolite-connect {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.teknolite-connect .connect-heading {
+    margin-bottom: 40px;
+}
+
+.teknolite-connect .connect-heading h3 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Onsurface, #181818);
+}
+
+.teknolite-connect .connect-card {
+    position: relative;
+    min-height: 420px;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 36px;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.teknolite-connect .connect-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18) !important;
+}
+
+.teknolite-connect .connect-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 1;
+}
+
+.teknolite-connect .connect-card:hover .connect-card-bg {
+    transform: scale(1.06);
+}
+
+.teknolite-connect .connect-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.52) 0%, rgba(15, 23, 42, 0.74) 100%);
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+.teknolite-connect .connect-card:hover .connect-card-overlay {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.68) 100%);
+}
+
+.teknolite-connect .connect-card-inner {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Fallback backgrounds if .connect-card-bg not present */
+.teknolite-connect .col-lg-6:first-child .connect-card,
+.teknolite-connect .connect-card.connect-card-light,
+.teknolite-connect .connect-card-expert {
+    background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.52) 0%, rgba(15, 23, 42, 0.74) 100%), 
+                      url('../images/banner/commercial.jpeg');
+}
+
+.teknolite-connect .col-lg-6:last-child .connect-card,
+.teknolite-connect .connect-card-consult {
+    background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.52) 0%, rgba(15, 23, 42, 0.74) 100%), 
+                      url('../images/banner/insights1.jpg');
+}
+
+/* Typography matching the screenshot */
+.teknolite-connect .connect-card h4 {
+    color: #ffffff !important;
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+    max-width: 480px !important;
+}
+
+.teknolite-connect .connect-card p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 28px !important;
+    max-width: 440px !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* White Pill Capsule Buttons (Exact match to screenshot) */
+.teknolite-connect .connect-btn {
+    background: #ffffff !important;
+    color: #111827 !important;
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 13px 32px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    min-height: 48px !important;
+    min-width: 210px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.teknolite-connect .connect-btn i {
+    font-size: 15px !important;
+    transition: transform 0.25s ease !important;
+}
+
+.teknolite-connect .connect-btn .icon-whatsapp {
+    font-size: 19px !important;
+    color: #25D366 !important;
+    transition: color 0.25s ease !important;
+}
+
+/* Hover effects */
+.teknolite-connect .connect-btn:hover {
+    transform: translateY(-3px) scale(1.03) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.teknolite-connect .connect-btn-dark:hover {
+    background: #04308c !important;
+    color: #ffffff !important;
+}
+
+.teknolite-connect .connect-btn-whatsapp:hover {
+    background: #25D366 !important;
+    color: #ffffff !important;
+}
+.teknolite-connect .connect-btn-whatsapp:hover .icon-whatsapp {
+    color: #ffffff !important;
+}
+
+.teknolite-connect .connect-btn:hover i {
+    transform: translate(2px, -2px) !important;
+}
+
+/* Quote Line */
+.teknolite-connect .connect-quote {
+    margin-top: 32px !important;
+    font-size: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+}
+
+.teknolite-connect .connect-quote span {
+    color: var(--Secondary, #555555) !important;
+}
+
+.teknolite-connect .connect-quote .btn-line {
+    font-weight: 600 !important;
+    color: #04308c !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+@media (max-width: 991px) {
+    .teknolite-connect .connect-card {
+        min-height: 350px !important;
+        padding: 40px 24px !important;
+    }
+    .teknolite-connect .connect-card h4 {
+        font-size: 26px !important;
+    }
+}
+
+
+
+
+
+

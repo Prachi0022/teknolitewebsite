@@ -1,0 +1,946 @@
+/**
+ * TeknoLite Admin Master Stylesheet (Teknolite Theme)
+ * Located in assets/admin/app.css
+ * Connected to all views in application/views/admin/
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Play:wght@400;700&display=swap');
+
+:root {
+    --admin-sidebar-width: 260px;
+    --admin-sidebar-collapsed-width: 72px;
+    --admin-topbar-height: 70px;
+    --admin-primary: #04308c;
+    --admin-primary-rgb: 4, 48, 140;
+    --admin-primary-hover: #03256c;
+    --admin-primary-light: rgba(4, 48, 140, 0.12);
+    --admin-sidebar-bg: #181818;
+    --admin-sidebar-color: #a0a0a0;
+    --admin-sidebar-active: #ffffff;
+    --admin-sidebar-hover-bg: rgba(255, 255, 255, 0.06);
+    --admin-body-bg: #f6f6f6;
+    --admin-card-bg: #ffffff;
+    --admin-border-color: #e9e9e9;
+    --admin-text-main: #181818;
+    --admin-text-muted: #64748b;
+}
+
+[data-bs-theme="dark"] {
+    --admin-body-bg: #121212;
+    --admin-card-bg: #1c1c1c;
+    --admin-border-color: #2b2b2b;
+    --admin-text-main: #f8fafc;
+    --admin-text-muted: #a0a0a0;
+    --admin-sidebar-bg: #111111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--admin-body-bg);
+    color: var(--admin-text-muted);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Admin Layout Shell
+   ========================================================================== */
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.admin-main-wrapper {
+    flex: 1;
+    margin-left: var(--admin-sidebar-width);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--admin-body-bg);
+}
+
+.admin-page-content {
+    flex: 1;
+}
+
+/* ==========================================================================
+   Admin Sidebar Navigation (Teknolite Theme)
+   ========================================================================== */
+
+.admin-sidebar {
+    width: var(--admin-sidebar-width);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    color: var(--admin-sidebar-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 1045;
+    transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+}
+
+.sidebar-brand {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.brand-icon-Teknolite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.brand-name-Teknolite {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    white-space: nowrap;
+}
+
+.sidebar-toggle-chevron {
+    background: transparent;
+    border: none;
+    color: #9097a7;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.sidebar-toggle-chevron:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-menu-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.sidebar-menu-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-menu-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.sidebar-menu {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.menu-title {
+    padding: 1rem 1.5rem 0.4rem;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #636b7b;
+    white-space: nowrap;
+}
+
+.menu-item {
+    margin: 2px 0;
+    position: relative;
+    list-style: none !important;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-link:hover {
+    color: #080808;
+    background: var(--admin-sidebar-hover-bg);
+}
+
+.menu-item.active > .menu-link {
+    color: #000000;
+    border-left-color: var(--admin-primary);
+    background: rgba(4, 48, 140, 0.15);
+}
+
+.menu-icon {
+    font-size: 19px;
+    width: 22px;
+    text-align: center;
+    flex-shrink: 0;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item.active > .menu-link .menu-icon {
+    color: var(--admin-primary);
+}
+
+.menu-text {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.menu-arrow {
+    font-size: 15px;
+    transition: transform 0.2s ease;
+    color: inherit;
+}
+
+.menu-item.open > .menu-dropdown-toggle .menu-arrow {
+    transform: rotate(180deg);
+}
+
+/* Sidebar Submenu */
+.sidebar-submenu {
+    list-style: none !important;
+    padding: 4px 0 6px 3.25rem !important;
+    margin: 0 !important;
+}
+
+.submenu-item {
+    margin: 1px 0;
+    list-style: none !important;
+}
+
+.submenu-link {
+    display: block;
+    padding: 6px 0;
+    color: #000000;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+    white-space: nowrap;
+}
+
+.submenu-link:hover {
+    color: #000000;
+}
+
+.submenu-item.active .submenu-link {
+    color: var(--admin-primary);
+    font-weight: 600;
+}
+
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 1040;
+}
+
+/* Desktop Collapsed Sidebar */
+body.sidebar-collapsed .admin-sidebar {
+    width: var(--admin-sidebar-collapsed-width);
+}
+
+body.sidebar-collapsed .admin-main-wrapper {
+    margin-left: var(--admin-sidebar-collapsed-width);
+}
+
+body.sidebar-collapsed .brand-name-Teknolite,
+body.sidebar-collapsed .menu-title,
+body.sidebar-collapsed .menu-text,
+body.sidebar-collapsed .menu-arrow,
+body.sidebar-collapsed .sidebar-submenu {
+    display: none !important;
+}
+
+body.sidebar-collapsed .sidebar-brand {
+    justify-content: center;
+    padding: 0;
+}
+
+body.sidebar-collapsed .sidebar-toggle-chevron {
+    display: none;
+}
+
+body.sidebar-collapsed .menu-link {
+    justify-content: center;
+    padding: 0.75rem 0;
+    border-left: none;
+}
+
+body.sidebar-collapsed .menu-icon {
+    font-size: 22px;
+    width: auto;
+}
+
+body.sidebar-collapsed .menu-item.active > .menu-link {
+    border-left: none;
+    background: rgba(4, 48, 140, 0.2);
+    border-radius: 8px;
+    margin: 2px 10px;
+}
+
+/* ==========================================================================
+   Admin Topbar Header (Teknolite Theme)
+   ========================================================================== */
+
+.admin-topbar {
+    height: var(--admin-topbar-height);
+    background: var(--admin-card-bg);
+    border-bottom: 1px solid var(--admin-border-color);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.topbar-welcome-title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--admin-text-main);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.topbar-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+    padding: 0;
+    outline: none;
+}
+
+.topbar-icon-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--admin-text-main);
+}
+
+.topbar-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--admin-card-bg);
+}
+
+.topbar-avatar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topbar-user-avatar {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    border: 2px solid #ffffff;
+    display: block;
+}
+
+.topbar-search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-search-icon {
+    position: absolute;
+    left: 12px;
+    color: #8486a7;
+    font-size: 17px;
+    pointer-events: none;
+}
+
+.topbar-search-input {
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid var(--admin-border-color);
+    background: #ffffff;
+    padding-left: 36px;
+    padding-right: 16px;
+    font-size: 13px;
+    color: var(--admin-text-main);
+    outline: none;
+    width: 180px;
+    transition: all 0.2s ease;
+}
+
+.topbar-search-input:focus {
+    width: 230px;
+    border-color: var(--admin-primary);
+    box-shadow: 0 0 0 3px rgba(4, 48, 140, 0.15);
+}
+
+/* ==========================================================================
+   Teknolite Product List Table & Controls
+   ========================================================================== */
+
+.Teknolite-card {
+    background: var(--admin-card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--admin-border-color);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.Teknolite-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--admin-text-main);
+}
+
+.btn-Teknolite-primary {
+    background-color: var(--admin-primary);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s ease;
+}
+
+.btn-Teknolite-primary:hover {
+    background-color: #03256c;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(4, 48, 140, 0.3);
+}
+
+.btn-Teknolite-select {
+    background: #ffffff;
+    border: 1px solid var(--admin-border-color);
+    color: #475569;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-Teknolite-select:hover {
+    border-color: #cbd5e1;
+    color: var(--admin-text-main);
+}
+
+.Teknolite-table {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.Teknolite-table thead th {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #64748b;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--admin-border-color);
+    background: var(--admin-card-bg);
+    white-space: nowrap;
+}
+
+.Teknolite-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    color: var(--admin-text-main);
+}
+
+.Teknolite-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Strict Product Thumbnail Container */
+.Teknolite-product-thumb {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    overflow: hidden !important;
+    flex-shrink: 0;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+}
+
+.Teknolite-product-thumb img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block;
+}
+
+.Teknolite-product-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--admin-text-main);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.Teknolite-product-title:hover {
+    color: var(--admin-primary);
+}
+
+.Teknolite-product-size {
+    font-size: 12px;
+    color: #64748b;
+    display: block;
+}
+
+.Teknolite-price-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--admin-text-main);
+}
+
+.Teknolite-stock-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-item-left {
+    font-size: 13px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.stock-item-sold {
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-top: 1px;
+}
+
+.Teknolite-category-label {
+    font-size: 13px;
+    color: #475569;
+    font-weight: 500;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.Teknolite-rating-display {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rating-score {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--admin-text-main);
+}
+
+.rating-reviews {
+    font-size: 12px;
+    color: #64748b;
+    margin-left: 2px;
+}
+
+.Teknolite-action-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.Teknolite-btn-action {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn-action-view {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.btn-action-view:hover {
+    background-color: #e2e8f0;
+    color: var(--admin-text-main);
+}
+
+.btn-action-edit {
+    background-color: #edf2fb;
+    color: var(--admin-primary);
+}
+
+.btn-action-edit:hover {
+    background-color: #dbe4f9;
+    color: #03256c;
+}
+
+.btn-action-delete {
+    background-color: #fef2f2;
+    color: #ef4444;
+}
+
+.btn-action-delete:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+        width: var(--admin-sidebar-width);
+    }
+
+    .admin-main-wrapper {
+        margin-left: 0 !important;
+    }
+
+    body.sidebar-mobile-open .admin-sidebar {
+        transform: translateX(0);
+    }
+
+    body.sidebar-mobile-open .sidebar-backdrop {
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   Teknolite Admin Dashboard & Component Utilities
+   ========================================================================== */
+
+/* Avatars */
+.avatar-md {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.avatar-sm {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.avatar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
+/* Soft Color Backgrounds & Text */
+.bg-soft-primary {
+    background-color: rgba(4, 48, 140, 0.12) !important;
+    color: #04308c !important;
+}
+
+.text-primary {
+    color: #04308c !important;
+}
+
+.btn-soft-primary {
+    background-color: rgba(4, 48, 140, 0.12) !important;
+    color: #04308c !important;
+    border: none !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-soft-primary:hover {
+    background-color: #04308c !important;
+    color: #ffffff !important;
+}
+
+/* Soft Badges */
+.badge-soft-success {
+    background-color: rgba(16, 185, 129, 0.12) !important;
+    color: #10b981 !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+}
+
+.badge-soft-danger {
+    background-color: rgba(239, 68, 68, 0.12) !important;
+    color: #ef4444 !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+}
+
+.badge-soft-warning {
+    background-color: rgba(245, 158, 11, 0.12) !important;
+    color: #f59e0b !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+}
+
+/* Dashboard Cards */
+.card {
+    border: 1px solid #eef2f6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    margin-bottom: 1.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+.card-height-100 {
+    height: calc(100% - 1.25rem);
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+[data-bs-theme="dark"] .card-title {
+    color: #f8fafc;
+}
+
+.card-footer {
+    background-color: rgba(248, 250, 252, 0.8);
+    border-top: 1px solid #f1f5f9;
+    padding: 0.75rem 1.25rem;
+}
+
+[data-bs-theme="dark"] .card-footer {
+    background-color: rgba(15, 23, 42, 0.6);
+    border-top-color: #334155;
+}
+
+/* Tables */
+.table-nowrap th,
+.table-nowrap td {
+    white-space: nowrap;
+}
+
+.table-centered th,
+.table-centered td {
+    vertical-align: middle;
+}
+
+.table th {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    border-bottom: 1px solid #eef2f6;
+    padding: 0.75rem 1rem;
+}
+
+.table td {
+    font-size: 13px;
+    color: #334155;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+[data-bs-theme="dark"] .table th {
+    color: #94a3b8;
+    border-bottom-color: #334155;
+}
+
+[data-bs-theme="dark"] .table td {
+    color: #cbd5e1;
+    border-bottom-color: #334155;
+}
+
+/* Pagination */
+.pagination .page-item .page-link {
+    color: #64748b;
+    border-color: #e2e8f0;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #04308c;
+    border-color: #04308c;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Alert Notification Banner */
+.Teknolite-alert-trouble {
+    background-color: #edf2fb !important;
+    border: 1px solid #c9daf8 !important;
+    color: #04308c !important;
+    border-radius: 8px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    padding: 12px 18px !important;
+}
+
+[data-bs-theme="dark"] .Teknolite-alert-trouble {
+    background-color: rgba(4, 48, 140, 0.15) !important;
+    border-color: rgba(4, 48, 140, 0.3) !important;
+    color: #93b3f2 !important;
+}
+
+/* Performance Filter Buttons */
+.btn-outline-light {
+    border-color: #e2e8f0 !important;
+    color: #64748b !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding: 3px 10px !important;
+    border-radius: 4px !important;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light.active {
+    background-color: #1e293b !important;
+    border-color: #1e293b !important;
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .btn-outline-light {
+    border-color: #334155 !important;
+    color: #94a3b8 !important;
+}
+
+[data-bs-theme="dark"] .btn-outline-light:hover,
+[data-bs-theme="dark"] .btn-outline-light.active {
+    background-color: #04308c !important;
+    border-color: #04308c !important;
+    color: #ffffff !important;
+}
+
+/* Simplebar / Settings Bar */
+.settings-bar .form-check-input:checked {
+    background-color: #04308c;
+    border-color: #04308c;
+}
+
